@@ -5,17 +5,23 @@ This project implements **real-time face detection** using OpenCV in C++. It off
 
 1. **Haarcascade Classifier** (Traditional, Fast, but Less Accurate)  
    - Uses pre-trained XML classifiers to detect faces based on pattern recognition.  
-   - Works well in good lighting but has many false detections.  
+   - Works well in good lighting but has many false detections.
+   - ![Screenshot 2025-02-12 102027](https://github.com/user-attachments/assets/86a7bcfb-9ef4-4179-8c69-6b2f4edc64ff)
+
 
 2. **Deep Learning DNN Model** (More Accurate but Requires a Pre-trained Model)  
    - Uses a TensorFlow-based pre-trained model (`opencv_face_detector_uint8.pb`).  
-   - Can detect faces in different lighting conditions and angles with better precision.  
+   - Can detect faces in different lighting conditions and angles with better precision.
+     ![Screenshot 2025-02-12 104904](https://github.com/user-attachments/assets/9f864d57-8737-4fe1-b8d2-776e0a320618)
+
 
 The model **captures frames from a webcam**, processes them, detects faces, and displays the output in real time.  
 
 ---
 
 ## 📌 How It Works  
+
+![Screenshot 2025-02-12 102135](https://github.com/user-attachments/assets/68b66cd6-8b8e-4cd3-8637-35acae9e3ca6)
 
 1️⃣ **Capture Video**  
    - The program initializes the webcam (`cv::VideoCapture`) to capture real-time video frames.  
